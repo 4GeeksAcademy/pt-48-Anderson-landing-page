@@ -1,25 +1,19 @@
 import React from "react";
+import Navbar from '/workspaces/pt-48-Anderson-landing-page/src/js/component/Navbar.jsx';
+import EnviarMail from '/workspaces/pt-48-Anderson-landing-page/src/js/component/EnviarMail.jsx';
+import odontologia from '/workspaces/pt-48-Anderson-landing-page/src/img/odontologia.jpg'
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+	return (<>
+		<div> 
+		  <Navbar />
+		  <EnviarMail />
 		</div>
+		</>
+		
 	);
 };
 
